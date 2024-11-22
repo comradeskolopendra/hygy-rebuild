@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e6012f23.css",
+    "main.js": "./static/js/main.da22e1bc.js",
+    "static/media/griefs.jpg": "./static/media/griefs.577cfcfac9a9d45aeaad.jpg",
+    "static/media/Matahari-Bold.ttf": "./static/media/Matahari-Bold.b30681bbeed7346370ea.ttf",
+    "static/media/Matahari-Thin.ttf": "./static/media/Matahari-Thin.5d7a4e8a3d710df22c0b.ttf",
+    "static/media/Matahari-Regular.ttf": "./static/media/Matahari-Regular.9c8e7e601e3a4c187bb4.ttf",
+    "static/media/article-photo.jpg": "./static/media/article-photo.9f7d3fd47778ce745c0c.jpg",
+    "static/media/horizon_outlined.otf": "./static/media/horizon_outlined.1421243f74e95f00d5fe.otf",
+    "static/media/main-photo-2.jpg": "./static/media/main-photo-2.082e7be3e84f88faf0ad.jpg",
+    "static/media/horizon.otf": "./static/media/horizon.3d45dd95383aa5807d4b.otf",
+    "static/media/BebasNeue-Thin.ttf": "./static/media/BebasNeue-Thin.eb87db46b38a0992f586.ttf",
+    "static/media/BebasNeue-Regular.ttf": "./static/media/BebasNeue-Regular.e141c2ca4bf7dc222d1c.ttf",
+    "static/media/yumi.png": "./static/media/yumi.40dec57c6cfafbab9162.png",
+    "static/media/BebasNeue-Bold.ttf": "./static/media/BebasNeue-Bold.631170744c6a98c2e74e.ttf",
+    "static/media/gaziza.png": "./static/media/gaziza.b6c1a1ff6d61915c0aef.png",
+    "static/media/yul.png": "./static/media/yul.f05bb1783fb8e80b722d.png",
+    "index.html": "./index.html",
+    "main.e6012f23.css.map": "./static/css/main.e6012f23.css.map",
+    "main.da22e1bc.js.map": "./static/js/main.da22e1bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6012f23.css",
+    "static/js/main.da22e1bc.js"
+  ]
+}
