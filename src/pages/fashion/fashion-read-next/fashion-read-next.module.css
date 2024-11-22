@@ -1,0 +1,49 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    color: black;
+}
+
+.photo {
+    width: 100%;
+}
+
+.text {
+    font-family: "Bebas", sans-serif;
+    font-size: 25px;
+    margin: 0;
+    position: relative;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 25px;
+    bottom: 0;
+    margin-left: -25px;
+    background: linear-gradient(90deg, rgb(255, 255, 255, 0.3) 25%, rgb(255, 255, 255, 1));
+}
+
+.title {
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.readNext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    gap: 75px;
+}
+
+@media screen and (max-width: 1380px) {
+    .readNext {
+        gap: 15px;
+        max-width: 620px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}

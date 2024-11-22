@@ -1,0 +1,28 @@
+.article {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.description {
+    color: white;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    font-size: 25px;
+    font-family: "Bebas", sans-serif;
+}

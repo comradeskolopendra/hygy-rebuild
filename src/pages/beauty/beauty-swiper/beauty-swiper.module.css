@@ -1,0 +1,17 @@
+.swiperWrapper {
+    background-color: black;
+    padding: 20px 0;
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .control {
+        display: none;
+    }
+
+    .swiperWrapper {
+        padding: 20px 8px;
+    }
+}

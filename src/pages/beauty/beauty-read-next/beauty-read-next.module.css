@@ -1,0 +1,60 @@
+.readNext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.heading {
+    margin: 0 0 25px 0;
+    font-size: 50px;
+    color: #C32424;
+}
+
+.articles {
+    background-color: #C32424;
+    padding: 35px 0;
+    width: 100%;
+}
+
+.innerArticles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 280px;
+}
+
+.photo {
+    width: 100%;
+}
+
+.articleHeading {
+    margin: 0;
+}
+
+.description {
+    margin: 0;
+    font-size: 25px;
+    font-family: "Bebas", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+    .innerArticles {
+        display: flex;
+        max-width: 600px;
+        flex-wrap: wrap;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+}

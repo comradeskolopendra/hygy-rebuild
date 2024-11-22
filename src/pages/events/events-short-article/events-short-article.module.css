@@ -1,0 +1,37 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 18%;
+    margin: 0 auto;
+}
+
+.photo {
+    width: 100%;
+}
+
+.heading {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin: 0;
+}
+
+.description {
+    font-family: "Bebas", sans-serif;
+    font-size: 25px;
+    margin: 15px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .article {
+        max-width: 24%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .article {
+        max-width: 100%;
+    }
+}

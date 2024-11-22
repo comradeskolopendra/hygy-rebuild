@@ -1,0 +1,50 @@
+.article {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 20px 40px;
+    max-width: 25%;
+}
+
+.photo {
+    height: 240px
+}
+
+.text {
+    font-size: 25px;
+    font-family: "Bebas", sans-serif;
+    position: relative;
+}
+
+.text::after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 25px;
+    bottom: 0;
+    margin-left: -25px;
+    background: linear-gradient(90deg, rgb(255, 255, 255, 0.3) 25%, rgb(255, 255, 255, 1));
+}
+
+@media screen and (max-width: 1380px) {
+    .article {
+        max-width: unset;
+        flex-direction: row;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .photo {
+        height: 200px;
+    }
+
+    .text {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .article {
+        flex-direction: column;
+    }
+}

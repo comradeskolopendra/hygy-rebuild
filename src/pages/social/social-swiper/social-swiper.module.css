@@ -1,0 +1,58 @@
+.swiper {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    min-height: 0;
+    min-width: 0;
+}
+
+.swiperWrapper {
+    display: flex;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100vh;
+    min-height: 0;
+    min-width: 0;
+    padding: 40px 0;
+    margin: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.swiperWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 20px;
+}
+
+.swiperWrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    width: 50%;
+    height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .control {
+        display: none;
+    }
+
+    .swiperWrapper {
+        padding: 40px 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiperWrapper::after, .swiperWrapper::before {
+        width: 100%;
+    }
+}

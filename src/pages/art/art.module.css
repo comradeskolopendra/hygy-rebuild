@@ -1,0 +1,52 @@
+.heading {
+    margin: 0;
+    font-size: 50px;
+    color: white;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: var(--primary-color)
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 35px auto 35px auto;
+    max-width: 90%;
+}
+
+.readNextArticles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 75px;
+    margin: 50px 15px 0;
+}
+
+.showMore {
+    width: 100%;
+    margin: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 1380px) {
+    .articles {
+        margin: 35px 15px;
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: unset;
+    }
+
+    .readNextArticles {
+        gap: 15px;
+        flex-wrap: wrap;
+        max-width: 620px;
+    }
+}

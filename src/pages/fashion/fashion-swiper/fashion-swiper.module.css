@@ -1,0 +1,16 @@
+.swiper {
+    width: 100%;
+}
+
+.swiperWrapper {
+    display: flex;
+    padding: 25px 0;
+    background-color: var(--primary-color);
+    max-width: calc(100vw - 40px);
+}
+
+@media screen and (max-width: 1380px) {
+    .swiperWrapper {
+        max-width: 100vw;
+    }
+}
