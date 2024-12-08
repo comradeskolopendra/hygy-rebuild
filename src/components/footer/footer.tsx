@@ -1,9 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./footer.module.css";
 
-import yt from "../../assets/images/socials/yt.png";
 import inst from "../../assets/images/socials/inst.png";
-import lnkd from "../../assets/images/socials/lnkd.png";
+import medium from "../../assets/images/socials/medium.png";
+import yt from "../../assets/images/socials/yt.png";
+
 import Marquee from "../marquee/marquee";
 
 const Footer = () => {
@@ -16,7 +17,9 @@ const Footer = () => {
                 <div className={styles.socialNetworks}>
                     <img src={yt} alt="" />
                     <img src={inst} alt="" />
-                    <img src={lnkd} alt="" />
+                    <a href="https://medium.com/@hygy_magazine" target="_blank">
+                        <img src={medium} alt="" />
+                    </a>
                 </div>
 
                 <div className={styles.externalLinks}>

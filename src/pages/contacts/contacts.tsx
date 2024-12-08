@@ -37,7 +37,7 @@ const Contacts = () => {
                         <br />
                         <span className={styles.note}>Youtube: </span> <a className={styles.link} href="https://www.youtube.com/@hygy_group" target="_blank">https://www.youtube.com/@hygy_group</a>
                         <br />
-                        <span className={styles.note}>LinkedIn</span>
+                        <span className={styles.note}>Medium: </span> <a className={styles.link} href="https://medium.com/@hygy_magazine" target="_blank">https://medium.com/@hygy_magazine</a>
                     </p>
                 </section>
             </section>

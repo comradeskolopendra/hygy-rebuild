@@ -8,7 +8,7 @@
 
 .heading {
     margin: 0 0 25px 0;
-    font-size: 50px;
+    font-size: 46px;
     color: black;
 }
 
@@ -16,14 +16,6 @@
     background-color: black;
     padding: 35px 0;
     width: 100%;
-}
-
-.innerArticles {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: 0 auto;
 }
 
 .article {
@@ -49,13 +41,23 @@
     color: white;
 }
 
-@media screen and (max-width: 1024px) {
+.innerArticles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1300px) {
     .innerArticles {
-        display: flex;
-        max-width: 600px;
+        gap: 15px;
+        max-width: 620px;
         flex-wrap: wrap;
     }
+}
 
+@media screen and (max-width: 1024px) {
     .heading {
         font-size: 40px;
     }

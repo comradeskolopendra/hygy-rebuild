@@ -12,7 +12,7 @@ const Privacy = () => {
                 <h1 className={styles.heading}>Privacy Policy</h1>
 
                 <section className={styles.text}>
-                    <p className={styles.paragraph}>Effective Date: Dec, 01 2024</p>
+                    <p className={styles.paragraph}>Effective Date: Dec, x 2024</p>
                     <p className={styles.paragraph}>
                         Dear reader, welcome to HYGY Magazine website. Your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your information when you visit our website.
                         <br />

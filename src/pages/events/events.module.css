@@ -8,11 +8,10 @@
     padding: 20px 0;
     background-color: var(--primary-color);
     margin: 0;
-    font-size: 50px;
+    font-size: 46px;
     color: white;
 }
 
-.fullArticles,
 .shortArticles {
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +21,22 @@
     margin: 20px 0 0;
 }
 
+.fullArticles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    padding: 0 16px;
+    margin: 20px 0 0;
+}
+
 .shortArticles {
     margin: 50px 0;
+}
+
+@media screen and (max-width: 1240px) {
+    .fullArticles {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }

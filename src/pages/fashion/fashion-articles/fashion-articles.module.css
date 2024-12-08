@@ -2,14 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 0 16px;
     gap: 10px;
 }
 
 @media screen and (max-width: 1380px) {
     .articles {
         flex-direction: column;
-        margin: 0 15px;
         padding-right: 0;
         align-items: center;
     }
