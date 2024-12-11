@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.6a5ef08f.css",
+    "main.css": "./static/css/main.4fbb6bf0.css",
     "main.js": "./static/js/main.903557d5.js",
     "static/media/griefs.jpg": "./static/media/griefs.577cfcfac9a9d45aeaad.jpg",
     "static/media/Matahari-Bold.ttf": "./static/media/Matahari-Bold.b30681bbeed7346370ea.ttf",
@@ -17,11 +17,11 @@
     "static/media/gaziza.png": "./static/media/gaziza.b6c1a1ff6d61915c0aef.png",
     "static/media/yul.png": "./static/media/yul.f05bb1783fb8e80b722d.png",
     "index.html": "./index.html",
-    "main.6a5ef08f.css.map": "./static/css/main.6a5ef08f.css.map",
+    "main.4fbb6bf0.css.map": "./static/css/main.4fbb6bf0.css.map",
     "main.903557d5.js.map": "./static/js/main.903557d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a5ef08f.css",
+    "static/css/main.4fbb6bf0.css",
     "static/js/main.903557d5.js"
   ]
 }
