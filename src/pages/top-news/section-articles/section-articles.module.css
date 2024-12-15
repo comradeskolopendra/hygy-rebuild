@@ -1,0 +1,67 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+
+    color: var(--primary-color);
+    font-size: 32px;
+}
+
+.nameRight {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.nameLeft {
+    text-align: left;
+    flex-direction: row;
+}
+
+.left, .right {
+    display: inline-block;
+}
+
+.left {
+    width: 30%;
+    height: 32px;
+    background: var(--primary-color);
+}
+
+.right {
+    width: 30%;
+    height: 32px;
+    background: var(--primary-color);
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding: 0 32px;
+    gap: 50px;
+}
+
+.article {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+.articleTitle {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.articleDescription {
+    font-family: "Bebas", sans-serif;
+    font-size: 25px;
+    margin: 0;
+}

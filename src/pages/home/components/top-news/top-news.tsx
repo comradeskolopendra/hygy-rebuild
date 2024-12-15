@@ -1,16 +1,22 @@
-import { FC } from "react";
+import {FC, useCallback} from "react";
 import { BASE_URL } from "../../../../constants";
 import Article from "./article/article";
 import styles from "./top-news.module.css";
 import Button from "../../../../components/button/button";
 
 import photo from "../../../../assets/images/griefs.jpg";
+import {useNavigate} from "react-router";
 
 interface TopNewsProps {
     name: string;
 }
 
 const TopNews: FC<TopNewsProps> = ({ name }) => {
+    const navigate = useNavigate();
+
+    const handleClickShowMore = useCallback(() => {
+        navigate("/top-news")
+    }, [navigate]);
 
     return (
         <section className={styles.topNews} id="top-news">
@@ -28,7 +34,7 @@ const TopNews: FC<TopNewsProps> = ({ name }) => {
                 </section>
 
                 <div className={styles.buttonWrapper}>
-                    <Button>
+                    <Button onClick={handleClickShowMore}>
                         SHOW MORE
                     </Button>
                 </div>

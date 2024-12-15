@@ -1,0 +1,13 @@
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.heading {
+    margin: 35px 0;
+    font-size: 46px;
+    text-align: center;
+}
