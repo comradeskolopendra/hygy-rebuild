@@ -1,5 +1,5 @@
 import {FC} from "react";
-import styles from "./section-articles.module.css";
+import styles from "./top-news-articles.module.css";
 import clsx from "clsx";
 
 import griefs from "../../../assets/images/griefs.jpg";
@@ -9,7 +9,7 @@ interface SectionArticlesProps {
     side: "left" | "right";
 }
 
-const SectionArticles: FC<SectionArticlesProps> = ({name, side}) => {
+const TopNewsArticles: FC<SectionArticlesProps> = ({name, side}) => {
 
     return (
         <section className={styles.block}>
@@ -36,4 +36,4 @@ const SectionArticles: FC<SectionArticlesProps> = ({name, side}) => {
     )
 };
 
-export default SectionArticles;
+export default TopNewsArticles;

@@ -1,5 +1,5 @@
 import { FC } from "react";
-import articlePhoto from "../../../../../assets/images/article-photo.jpg";
+import articlePhoto from "../../assets/images/article-photo.jpg";
 import styles from "./tile.module.css";
 
 interface TileProps {

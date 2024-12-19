@@ -10,8 +10,15 @@
 }
 
 .tilesInfo {
+    display: grid;
+
     scroll-margin-top: 50px;
     background: var(--dark-color);
+    padding-bottom: 15px;
+}
+
+.tilesShowMore {
+    justify-self: center;
 }
 
 .tiles {

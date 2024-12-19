@@ -1,15 +1,23 @@
-import { FC } from "react";
+import {FC, useCallback} from "react";
 import Button from "../../../../components/button/button";
 import styles from "./photo-tiles.module.css";
 
-import Tile from "./tile/tile";
+import Tile from "../../../../components/tile/tile";
+import {useNavigate} from "react-router";
 
-interface ArticlesTilesProps {
+interface PhotoTilesProps {
     name: string;
     tiles: any[];
 }
 
-const ArticlesTiles: FC<ArticlesTilesProps> = ({ name, tiles }) => {
+const PhotoTiles: FC<PhotoTilesProps> = ({ name, tiles }) => {
+    const navigate = useNavigate();
+
+    const handleNavigateCreative = useCallback(() => {
+        navigate("/creative")
+    }, [navigate]);
+
+
     return (
         <section className={styles.tilesInfo} id={name}>
             <h2 className={styles.tilesTitle}>{name}</h2>
@@ -19,8 +27,10 @@ const ArticlesTiles: FC<ArticlesTilesProps> = ({ name, tiles }) => {
                     <Tile />
                 ))}
             </section>
+
+            <Button className={styles.tilesShowMore} onClick={handleNavigateCreative}>Show more</Button>
         </section>
     )
 };
 
-export default ArticlesTiles;
+export default PhotoTiles;
