@@ -15,7 +15,7 @@ const CreativeTiles = () => {
     return (
         <>
             <div className={styles.tiles}>
-                {[YuliaHLetter, 2, 3, 4, 5, YuliaYLetter, 7, 8, YuliaGLetter, 10, 11, 12, 13, 14, 15, YuliaYLetter].map((element) => {
+                {[YuliaHLetter, 2, 3, 4, 5, 6, YuliaYLetter, 8, 9, YuliaGLetter, 11, 12, 13, 14, 15, YuliaYLetter].map((element) => {
                     if (typeof element === "string") {
                         return <img className={styles.letter} src={element} alt="one of `H Y G Y` letter" />
                     } else {
