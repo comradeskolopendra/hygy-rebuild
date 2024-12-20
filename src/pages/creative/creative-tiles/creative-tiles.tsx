@@ -6,12 +6,16 @@ import HLetter from "../assets/images/h-image.jpg";
 import YLetter from "../assets/images/y-image.jpg";
 import GLetter from "../assets/images/g-image.jpg";
 
+import YuliaHLetter from "../assets/images/yulia-h-image.png";
+import YuliaYLetter from "../assets/images/yulia-y-image.png";
+import YuliaGLetter from "../assets/images/yulia-g-image.png";
+
 
 const CreativeTiles = () => {
     return (
         <>
             <div className={styles.tiles}>
-                {[HLetter, 2, 3, 4, 5, YLetter, 7, 8, GLetter, 10, 11, 12, 13, 14, 15, YLetter].map((element) => {
+                {[YuliaHLetter, 2, 3, 4, 5, YuliaYLetter, 7, 8, YuliaGLetter, 10, 11, 12, 13, 14, 15, YuliaYLetter].map((element) => {
                     if (typeof element === "string") {
                         return <img className={styles.letter} src={element} alt="one of `H Y G Y` letter" />
                     } else {
