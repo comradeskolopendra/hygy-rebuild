@@ -45,6 +45,25 @@
   src: local('Bebas'), url(./assets/fonts/BebasNeue-Regular.ttf) format('opentype');
 }
 
+@font-face {
+  font-family: "Flinders";
+  font-weight: 400;
+  src: local('Flinders'), url(./assets/fonts/Flinders.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: "TT Hoves";
+  font-weight: 400;
+  src: local('TT Hoves'), url(./assets/fonts/TT_hoves.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: "Sanva";
+  font-weight: 400;
+  src: local('Sanva'), url(./assets/fonts/Sanva.ttf) format('opentype');
+}
+
+
 :root {
   --primary-color: #D50032;
   --dark-color: #000000;
