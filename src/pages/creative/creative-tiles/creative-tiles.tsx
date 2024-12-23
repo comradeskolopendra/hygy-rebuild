@@ -2,10 +2,6 @@ import styles from "./creative-tiles.module.css";
 import Tile from "../../../components/tile/tile";
 import Button from "../../../components/button/button";
 
-import HLetter from "../assets/images/h-image.jpg";
-import YLetter from "../assets/images/y-image.jpg";
-import GLetter from "../assets/images/g-image.jpg";
-
 import YuliaHLetter from "../assets/images/yulia-h-image.png";
 import YuliaYLetter from "../assets/images/yulia-y-image.png";
 import YuliaGLetter from "../assets/images/yulia-g-image.png";

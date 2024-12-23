@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import { ArtPage, BeautyPage, CreativePage, EventsPage, FashionPage, HomePage, SocialPage, TopNewsPage, CareerPage, ContactsPage, AboutUsPage, PrivacyPage } from "../pages";
+import { FullArticlePage, ArtPage, BeautyPage, CreativePage, EventsPage, FashionPage, HomePage, SocialPage, TopNewsPage, CareerPage, ContactsPage, AboutUsPage, PrivacyPage } from "../pages";
 const App = () => {
 
   return (
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPage />} />
+        <Route path="/full-article" element={<FullArticlePage />} />
       </Routes>
     </>
   );

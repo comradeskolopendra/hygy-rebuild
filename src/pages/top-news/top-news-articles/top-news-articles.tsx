@@ -3,6 +3,7 @@ import styles from "./top-news-articles.module.css";
 import clsx from "clsx";
 
 import griefs from "../../../assets/images/griefs.jpg";
+import {useNavigate} from "react-router";
 
 interface SectionArticlesProps {
     name: string;
@@ -10,6 +11,11 @@ interface SectionArticlesProps {
 }
 
 const TopNewsArticles: FC<SectionArticlesProps> = ({name, side}) => {
+    const navigate = useNavigate()
+
+    const handleNavigateArticle = () => {
+        navigate("/full-article")
+    };
 
     return (
         <section className={styles.block}>
@@ -23,7 +29,7 @@ const TopNewsArticles: FC<SectionArticlesProps> = ({name, side}) => {
 
             <section className={styles.articles}>
                 {[1,2,3,4].map(() => (
-                    <article className={styles.article}>
+                    <article onClick={handleNavigateArticle} className={styles.article}>
                         <img className={styles.image} src={griefs} alt={"griefs"}/>
                         <h3 className={styles.articleTitle}>Title</h3>
                         <p className={styles.articleDescription}>
