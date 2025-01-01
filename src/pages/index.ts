@@ -11,5 +11,7 @@ import PrivacyPage from "./privacy-policy/privacy";
 import SocialPage from "./social/social";
 import TopNewsPage from "./top-news/top-news";
 import FullArticlePage from "./full-article/full-article";
+import FullArticleSecondPage from "./full-article-second/full-article-second";
+import FullArticleThirdPage from "./full-article-third/full-article-third";
 
-export { AboutUsPage, ArtPage, BeautyPage, CareerPage, ContactsPage, CreativePage, EventsPage, FashionPage, HomePage, PrivacyPage, SocialPage, TopNewsPage, FullArticlePage };
+export { FullArticleThirdPage, FullArticleSecondPage, AboutUsPage, ArtPage, BeautyPage, CareerPage, ContactsPage, CreativePage, EventsPage, FashionPage, HomePage, PrivacyPage, SocialPage, TopNewsPage, FullArticlePage };

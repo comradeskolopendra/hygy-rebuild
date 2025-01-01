@@ -1,0 +1,66 @@
+.topImages {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas:
+                "first first first first first second second second"
+                "first first first first first third third third";
+
+    gap: 25px;
+}
+
+.articleHeader {
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.hygyFirst, .hygySecond, .hygyThird, .hygyFourth {
+    width: 100%;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px;
+    max-width: 90%;
+}
+
+.hygyFirst {
+    grid-area: first;
+}
+
+.hygySecond {
+    grid-area: second;
+}
+
+.hygyThird {
+    grid-area: third;
+    align-self: flex-end;
+}
+
+.text {
+    font-family: "Flinders", sans-serif;
+    font-size: 24px;
+}
+
+.hygyFourthBot, .hygyFirstBot, .hygySecondBot, .hygyThirdBot {
+    width: 100%;
+}
+
+.hygyFirstBot {
+    grid-area: firstBot;
+}
+
+.hygySecondBot {
+    grid-area: secondBot;
+}
+
+.hygyThirdBot {
+    grid-area: thirdBot;
+}
+
+.hygyFourthBot {
+    grid-area: fourthBot;
+}

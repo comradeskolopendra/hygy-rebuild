@@ -15,8 +15,14 @@ interface SectionArticlesProps {
 const TopNewsArticles: FC<SectionArticlesProps> = ({name, side}) => {
     const navigate = useNavigate()
 
-    const handleNavigateArticle = () => {
-        navigate("/full-article")
+    const handleNavigateArticle = (idx: number) => {
+        if (idx === 1) {
+            navigate("/full-article-second")
+        } else if (idx === 2) {
+            navigate("/full-article-third")
+        } else {
+            navigate("/full-article")
+        }
     };
 
     return (
@@ -31,7 +37,7 @@ const TopNewsArticles: FC<SectionArticlesProps> = ({name, side}) => {
 
             <section className={styles.articles}>
                 {[1,2,3,4].map((_, idx) => (
-                    <article onClick={handleNavigateArticle} className={styles.article}>
+                    <article onClick={() => handleNavigateArticle(idx)} className={styles.article}>
                         <img className={styles.image} src={
                             idx === 0 ? vertical : idx === 3 ? horizontal : griefs
                         } alt={"griefs"}/>
@@ -42,6 +48,7 @@ const TopNewsArticles: FC<SectionArticlesProps> = ({name, side}) => {
                             [styles.articleHovesDesc]: idx === 2
                         })}>
                             Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen ...
+                            {idx === 0 ? "Sanva" : idx === 1 ? "Flinders" : "TT Hoves"}
                         </p>
                     </article>
                 ))}
