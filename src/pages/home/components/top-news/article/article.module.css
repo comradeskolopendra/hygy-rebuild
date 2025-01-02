@@ -1,6 +1,5 @@
 .article {
     display: flex;
-    width: 48%;
 }
 
 
@@ -32,4 +31,37 @@
     font-size: 22px;
     font-family: "Bebas", sans-serif;
     margin: 0;
+}
+
+
+@media screen and (max-width: 1120px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .imageWrapper {
+        max-width: unset;
+        margin: 0;
+    }
+
+    .info {
+        margin-top: 16px;
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .title {
+        font-size: 16px;
+    }
 }

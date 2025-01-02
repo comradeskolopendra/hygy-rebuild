@@ -31,3 +31,9 @@
     padding: 16px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+    .tiles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

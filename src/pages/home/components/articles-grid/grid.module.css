@@ -1,22 +1,28 @@
 .articles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 16px;
     margin: 0 auto;
+
     max-width: 90%;
+
+    grid-template-areas:
+                         "big first-small"
+                         "big last-small";
 }
 
 .big {
-    width: 50%;
+    grid-area: big;
 }
 
-.smallArticles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    margin-left: 45px;
+.firstSmall {
+    grid-area: first-small;
+}
+
+.lastSmall {
+    grid-area: last-small;
 }
 
 .articlesTitle {

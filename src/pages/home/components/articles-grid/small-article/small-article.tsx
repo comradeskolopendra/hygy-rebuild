@@ -1,17 +1,19 @@
-import { FC } from "react";
+import {DetailedHTMLProps, FC, HTMLAttributes} from "react";
+
+import clsx from "clsx";
 import styles from "./small-article.module.css";
 
-interface SmallArticleProps {
+interface SmallArticleProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
     image: string;
     title: string;
     description: string;
 }
 
-const SmallArticle: FC<SmallArticleProps> = ({ image, title, description }) => {
+const SmallArticle: FC<SmallArticleProps> = ({ image, title, description, className }) => {
 
     return (
         <article
-            className={styles.article}
+            className={clsx(styles.article, className)}
             style={{
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover"

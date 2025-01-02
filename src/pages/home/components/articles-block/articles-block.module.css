@@ -1,10 +1,12 @@
 .articles {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+
     gap: 16px;
-    grid-template-rows: auto auto;
-    padding: 0 80px;
-    margin-top: 16px;
+    margin: 16px auto 0;
+
+    max-width: 90%;
 }
 
 .articlesTitle {
@@ -33,4 +35,11 @@
     justify-content: center;
     align-items: center;
     margin: 16px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+    .articles {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 }

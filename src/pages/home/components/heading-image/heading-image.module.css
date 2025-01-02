@@ -27,3 +27,14 @@
     top: 0;
     width: 100%;
 }
+
+@media screen and (max-width: 1120px) {
+    .container {
+        height: unset;
+    }
+
+    .image {
+        object-fit: cover;
+        max-width: 100%;
+    }
+}

@@ -23,7 +23,7 @@ const ArticlesBigRow: FC<ArticlesSpaceProps> = ({ name, articles, showMoreHandle
                         <Article
                             key={index}
                             isCenter={index === 1}
-                            heading={"ARTICLE TITLE (THE 2ND LINE)"}
+                            heading={"ARTICLE TITLE"}
                             photo={photo}
                             shortInfo="Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend "
                         />

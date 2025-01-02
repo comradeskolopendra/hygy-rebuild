@@ -1,4 +1,4 @@
-.heading {
+.title {
     font-size: 22px;
     margin-top: 0;
     margin-bottom: 0;
@@ -14,4 +14,16 @@
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Bebas", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .title {
+        font-size: 16px;
+    }
 }

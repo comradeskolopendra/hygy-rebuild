@@ -21,8 +21,11 @@
 .articles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 45px;
-    padding: 0 80px;
+
+    gap: 16px;
+    margin: 0 auto;
+
+    max-width: 90%;
 }
 
 .buttonWrapper {
@@ -32,3 +35,10 @@
     align-items: center;
     margin: 16px auto 0;
 }
+
+/* in case of bad visibility of articles block */
+/*@media screen and (max-width: 540px) {*/
+/*    .articles {*/
+/*        grid-template-columns: 1fr;*/
+/*    }*/
+/*}*/

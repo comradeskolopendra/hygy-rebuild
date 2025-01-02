@@ -17,19 +17,8 @@
 .description {
     font-size: 22px;
     font-family: "Bebas", sans-serif;
-    margin-bottom: 0;
     margin: 0;
 }
-
-
-/* why??? */
-/* .smallDescription {
-    max-width: 320px;
-}
-
-.bigDescription {
-    max-width: 500px;
-} */
 
 .image {
     width: 100%;
@@ -51,4 +40,28 @@
 
 .bigTitle {
     font-size: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .bigTitle {
+        font-size: 22px
+    }
+
+    .smallTitle {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .bigTitle {
+        font-size: 16px;
+    }
+
+    .smallTitle {
+        font-size: 14px;
+    }
 }

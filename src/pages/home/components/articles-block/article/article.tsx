@@ -11,7 +11,7 @@ const Article: FC<ArticleProps> = ({ name, photo, description }) => {
 
     return (
         <article>
-            <h2 className={styles.heading}>{name}</h2>
+            <h2 className={styles.title}>{name}</h2>
             <img src={photo} className={styles.photo} alt="" />
             <p className={styles.description}>{description}</p>
         </article>

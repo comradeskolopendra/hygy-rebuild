@@ -20,12 +20,11 @@ const ArticlesGrid: FC<ArticlesGridProps> = ({ name, showMoreHandler }) => {
 
             <div className={styles.contentWrapper}>
                 <section className={styles.articles}>
-                    <Article className={styles.big} name={"ARTICLE TITLE ( THE 2ND LINE) "} shortInfo={"Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend and the answer is almost always"} photo={`${BASE_URL}/${MOCK_IMAGES_ARTICLES[2]}`} />
+                    <Article className={styles.big} name={"ARTICLE TITLE"} shortInfo={"Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend and the answer is almost always"} photo={`${BASE_URL}/${MOCK_IMAGES_ARTICLES[2]}`} />
 
-                    <div className={styles.smallArticles}>
-                        <SmallArticle title={"ARTICLE TITLE ( THE 2ND LINE) "} description={"Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend and the answer is"} image={photo} />
-                        <SmallArticle title={"ARTICLE TITLE ( THE 2ND LINE) "} description={"Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend and the answer is"} image={photo} />
-                    </div>
+
+                    <SmallArticle className={styles.firstSmall} title={"ARTICLE TITLE"} description={"Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend and the answer is"} image={photo} />
+                    <SmallArticle className={styles.lastSmall} title={"ARTICLE TITLE"} description={"Why do skinny jeans get so much hate? Watch any TikTok or IG Reel asking London’s Gen Z about their least favourite fashion trend and the answer is"} image={photo} />
 
                 </section>
 

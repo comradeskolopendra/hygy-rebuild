@@ -21,8 +21,11 @@
 .articles {
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
-    gap: 45px;
-    padding: 0 80px;
+
+    gap: 16px;
+    margin: 0 auto;
+
+    max-width: 90%;
 }
 
 .buttonWrapper {
